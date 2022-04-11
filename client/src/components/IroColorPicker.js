@@ -23,7 +23,10 @@ export default class IroColorPicker extends React.Component {
 
   render() {
     return (
-      <div ref={el => this.el = el} />
+      <div>
+        <h1 style={{backgroundColor: this.props.hex}}>Rainbordle</h1>
+        <div ref={el => this.el = el} class="container"/>
+      </div>
     );
   }
 }
